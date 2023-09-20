@@ -1,0 +1,265 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding-bottom: 100px; 
+    color: #fff;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #0a344f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+
+header a:hover {
+     color: #000;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(253, 253, 253);
+    text-shadow:3px 3px #000 ;
+    word-spacing: 5px;
+    letter-spacing:2px;
+    text-align: center;
+    padding: 100px 0;
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: Helvetica, sans-serif,Arial;
+}
+.hero .container p{
+    color: rgb(255, 192, 235);
+    font-family: Arial, Helvetica, sans-serif;
+} .grid-container{
+    margin-top:  100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0px;
+    background-color: white;
+    padding: 0px;
+}
+.grid-container .box1{
+    background-color: darkorange;
+}
+.grid-container .box2{
+    background-color: #d3af37;
+}
+.grid-container .box3{
+    background-color: #C68642;
+}
+.grid-container .box4{
+    background-color: #fff;
+}
+.feature img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex: 0%;
+    display: inline-block;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Style the hero heading and paragraph */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Style the CTA button */
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the features section with flex layout */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #3498db;
+}
+
+/* Style each feature card */
+.feature {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #21da5f;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Style the testimonials section with a background color */
+.testimonials {
+    background-color: #124465;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.testimonials .container{
+   word-spacing: 2px; 
+   line-height: 17px;
+}
+
+.select{
+    margin-right: 70px;
+}
+
+/* Style the testimonial blocks */
+.testimonial {
+    background-color: rgb(41, 128, 185, 0.4);
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialquotes
+{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    margin:50px 200px;
+    padding: 40px 100px;
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #1a5984;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/*  
+.select.container {
+    width: 100px;
+    padding: 20px;
+    background-color: #f1a0a0;
+    border: 1px solid #e8c6c6;
+    margin: 0 auto; 
+}
+
+
+.select.container p {
+    font-style: italic;
+    margin-top: 10px;
+}
+.select1{
+    width: 100px;
+    padding: 20px;
+    background-color: #eaf6a8;
+    border: 1px solid #f6fc79;
+    margin: 0 auto; 
+}
+.select1 p {
+    font-style: italic;
+    margin-top: 10px;
+}
+.select2 {
+    width: 100px;
+    padding: 20px;
+    background-color: #cdf5b7;
+    border: 1px solid #f1f6ed;
+    margin: 0 auto; 
+}
+.select2 p {
+    font-style: italic;
+    margin-top: 10px;
+}
+ 
+
+ .boxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+    margin: 40px 80px;
+ }
+ */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .interactive-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Children's Education Hub</h1>
+    </header>
+    <div class="content">
+        <h2>Welcome to Our Educational Website</h2>
+        <p>Explore and learn with fun activities!</p>
+        <div class="interactive-box">
+            <h3>Math Quiz</h3>
+            <p>Test your math skills with this quiz:</p>
+            <button id="startQuiz">Start Quiz</button>
+            <p id="quizQuestion"></p>
+            <input type="number" id="userAnswer" placeholder="Your Answer">
+            <button id="checkAnswer">Check Answer</button>
+            <p id="quizResult"></p>
+        </div>
+    </div>
+    <script>
+        const quizQuestions = [
+            { question: "2 + 2 =", answer: 4 },
+            { question: "5 + 3 =", answer: 8 },
+            { question: "10 - 5 =", answer: 5 }
+        ];
+
+        let currentQuestionIndex = 0;
+
+        const startQuizButton = document.getElementById("startQuiz");
+        const quizQuestionElement = document.getElementById("quizQuestion");
+        const userAnswerInput = document.getElementById("userAnswer");
+        const checkAnswerButton = document.getElementById("checkAnswer");
+        const quizResultElement = document.getElementById("quizResult");
+
+        function startQuiz() {
+            startQuizButton.disabled = true;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            quizQuestionElement.textContent = quizQuestions[currentQuestionIndex].question;
+        }
+
+        function checkAnswer() {
+            const userAnswer = parseInt(userAnswerInput.value);
+            const correctAnswer = quizQuestions[currentQuestionIndex].answer;
+
+            if (userAnswer === correctAnswer) {
+                quizResultElement.textContent = "Correct! 🎉";
+            } else {
+                quizResultElement.textContent = "Incorrect. Try again.";
+            }
+
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < quizQuestions.length) {
+                showQuestion();
+            } else {
+                quizResultElement.textContent = "Quiz complete!";
+                startQuizButton.disabled = false;
+            }
+
+            userAnswerInput.value = "";
+        }
+
+        startQuizButton.addEventListener("click", startQuiz);
+        checkAnswerButton.addEventListener("click", checkAnswer);
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .heading {
+        text-align: center;
+       margin: auto;
+       width: 50%;
+       border: 3px solid white;
+       padding: 10px;
+       padding-bottom: 0px;
+       font-family: cursive;
+       font-size: 60px;
+       }
+       
+       .grid-container{
+            margin-top:  100px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 40px;
+            background-color: white;
+            padding: 0px;
+        }
+        .grid-container .box1{
+            background-color: #fff;
+        }
+        .grid-container .box2{
+            background-color: #fff;
+        }
+        .grid-container .box3{
+            background-color: #fff;
+        }
+        .grid-container .box4{
+            background-color: #fff;
+        }
+        .grid-container .box5{
+            background-color: #fff;
+        }
+        .grid-container .box6{
+            background-color: #fff;
+        }
+        .container05{
+            margin-top: 100px;
+        }
+        .container05 h1{
+            text-align: center;
+        }
+        .btn{
+            size: 1px;
+            color: blueviolet;
+            position: relative;
+            bottom: 600px;
+            float: left;
+        }
+        .grid-container button{
+            position: relative;
+            top: 30px;
+            right: 150px;
+            align-self: center;
+            cursor: pointer;
+            color: black ;
+            background-color: yellow;
+            block-size: initial;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            padding: 8px;
+        
+        }
+        .grid-container button :hover {     
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgb(6, 15, 2);
+            
+        }
+        .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+  </style>
+  
+</head>
+<body>
+    <div> 
+        <div><h1 class="heading">CLASS IST MATHS</h1></div>
+        <div class="grid-container">
+            <div  class="box1">
+            <img src="img06.jpeg" alt="">
+            <button><span class="front">
+            <a href="addition.html">Addition</a>
+      
+              </span></button>
+        </div>
+        <div class="box2">
+            <img src="img07.jpeg" alt="">
+            <button><span class="front">
+             <a href="subtraction.html">Subtraction</a>
+              </span> </button>
+        
+        </div>
+        <div class="box3" >
+            <img src="img08.jpeg" alt="">
+            <button><span class="front">
+            <a href="multiplication.html">Multiplication</a>
+              </span></button>
+        </div>
+        <div class="box4">
+            <img src="img09.jpeg" alt="">
+            <button><span class="front">
+                <li class="dropdown">
+                    <a href="#">Class</a>
+                    <div class="dropdown-content">
+                        <button ><a href="http://127.0.0.1:5500/website/static/shapes.pdf">Download PDF </a></button>
+                        
+                    </div>
+                </li>
+              </span> </button> 
+         </div>
+         <div  class="box5"><a href="#">Class</a>
+            <div class="dropdown-content">
+                <a href="shapes.html">Download PDF</a>
+            </div>
+            <img src="img10.png" alt="">
+            <button> 
+                <span class="front">
+                Mixed 
+               </span> 
+            </button>
+        </div>
+        <div class="box6">
+            <img src="img11.jpeg" alt="">
+            <button>
+                <span class="front">
+                Word Problems
+               </span> 
+            </button>
+        </div>
+    </div>
+</body>
+</html>
